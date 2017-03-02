@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Javascriptinlämning</title>
+</head>
+
+<body>
+	<p>Klicka på knappen för att skriva in ditt tal</p>
+    <p>Du skrev in talet: <b id="talet"></b></p>
+    <button onClick="changeText()">Klicka!</button>
+	<script language="javascript">
+	function changeText()
+	{
+		var siffra=prompt("Skriv din siffra här", "Siffra");
+		document.getElementById('talet').innerHTML = siffra;
+	}
+	
+	</script>
+</body>
+</html>
