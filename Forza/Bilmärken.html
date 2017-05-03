@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+    <meta charset="utf-8">
+    <link href="Slutprojekt.css" rel="stylesheet" type="text/css">
+    <title>Startsida</title>
+</head>
+
+<body>
+	<div id="storbox">
+    	<header>
+            	<ul class="menu" id="meny">
+  					<li><a href="Index.html">STARTSIDA</a></li>
+  					<li><a href="Om.html">OM</a></li>
+  					<li><a href="Bilmärken.html">BILMÄRKEN</a></li>
+  					<li><a href="#about">ATT GÖRA</a></li>
+                	<li><a href="#about">GALLERI</a></li>
+				</ul>
+        </header>
+        <article>
+			<button class="accordion"><img src="Logos/Audi-Logo.png" style="width:7%;"> Audi</button>
+				<div class="panel">
+  					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 						 					ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				</div>
+          	
+            <button class="accordion"><img src="Logos/Chevrolet-Logo.png" style="width:7%;"> Chevrolet</button>
+				<div class="panel">
+  					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 						 					ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				</div>
+
+			<button class="accordion"><img src="Logos/BMW-Logo.png" style="width:4%;"> BMW</button>
+				<div class="panel">
+  					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation  					ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				</div>
+
+			<button class="accordion"><img src="Logos/Porsche-Logo.png" style="width:4%;"> Porsche</button>
+				<div class="panel">
+  					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation  					ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				</div>
+
+			<button class="accordion"><img src="Logos/Volvo-Logo.png" style="width:5%;"> Volvo</button>
+				<div class="panel">
+  					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation  					ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) 
+	{
+  	acc[i].onclick = function() 
+		{
+    		this.classList.toggle("active");
+    		var panel = this.nextElementSibling;
+    		if (panel.style.maxHeight)
+			{
+      			panel.style.maxHeight = null;
+    		} 
+			else 
+			{
+      			panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  }
+}
+</script>
+
+
+        </article>
+    </div>
+</body>
+</html>
