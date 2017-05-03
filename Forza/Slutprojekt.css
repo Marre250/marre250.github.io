@@ -72,6 +72,31 @@ ul.menu li a {
 
 ul.menu li a:hover:not(.active) {background-color:#09F;}
 
+button.accordion {
+    background-color:rgba(141,173,190,0.6);
+    color:#000;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 20px;
+    transition: 0.4s;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #ddd;
+}
+
+div.panel {
+    padding: 0 18px;
+    background-color:rgba(255,255,255,0.2);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
 
 @media screen and (max-width: 1000px){ 
     ul.menu li {
