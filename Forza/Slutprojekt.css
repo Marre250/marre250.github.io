@@ -100,4 +100,7 @@ ul.menu li a:hover:not(.active) {background-color:#09F;}
 	    	background-repeat:no-repeat;
 	    	background-attachment:fixed;
 	}
+	body{
+		background-image:url(Forza_Mobile.jpg);
+	}
 }
