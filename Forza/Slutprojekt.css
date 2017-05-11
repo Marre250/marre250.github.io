@@ -138,6 +138,10 @@ h1{
 	width:5%;
 }
 
+#Blizzard_Map{
+	width:80%;
+}
+
 
 @media screen and (max-width: 800px){ 
     ul.menu li {
