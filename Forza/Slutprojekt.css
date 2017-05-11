@@ -168,5 +168,7 @@ h1{
 		background-image:url(Forza_Mobile.jpg);
 		background-size:100% auto;
 	    	background-attachment:fixed;
+	    	background-size:100% 100%;
+		background-repeat:no-repeat;
 	}
 }
