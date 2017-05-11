@@ -20,32 +20,38 @@
   					<li><a href="Index.html">STARTSIDA</a></li>
   					<li><a href="Om.html">OM</a></li>
   					<li><a href="Bilmärken.html">BILMÄRKEN</a></li>
-  					<li><a href="#about">ATT GÖRA</a></li>
-                	<li><a href="#about">GALLERI</a></li>
+                	<li><a href="Galleri.html">GALLERI</a></li>
 				</ul>
         </header>
         <article>
-			<button class="accordion"><img src="Logos/Audi-Logo.png" style="width:7%;"> Audi</button>
+        	<center><h1>Bilmärken</h1></center>
+            <p><center>Här kan du se fakta om utvalda bilmärken från spelet</center></p>
+			<button class="accordion"><img src="Logos/Audi-Logo.png" id="Audi"> Audi</button>
 				<div class="panel">
   					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 						 					ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				</div>
+           	
+            <button class="accordion"><img src="Logos/BMW-Logo.png" id="BMW"> BMW</button>
+				<div class="panel">
+  					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation  					ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				</div>
           	
-            <button class="accordion"><img src="Logos/Chevrolet-Logo.png" style="width:7%;"> Chevrolet</button>
+            <button class="accordion"><img src="Logos/Chevrolet-Logo.png" id="Chevrolet"> Chevrolet</button>
 				<div class="panel">
   					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 						 					ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				</div>
 
-			<button class="accordion"><img src="Logos/BMW-Logo.png" style="width:4%;"> BMW</button>
+			<button class="accordion"><img src="Logos/Porsche-Logo.png" id="Porsche"> Porsche</button>
 				<div class="panel">
   					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation  					ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				</div>
-
-			<button class="accordion"><img src="Logos/Porsche-Logo.png" style="width:4%;"> Porsche</button>
+            
+            <button class="accordion"><img src="Logos/Reliant_Logo.png" id="Reliant"> Reliant</button>
 				<div class="panel">
-  					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation  					ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 						 					ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				</div>
 
-			<button class="accordion"><img src="Logos/Volvo-Logo.png" style="width:5%;"> Volvo</button>
+			<button class="accordion"><img src="Logos/Volvo-Logo.png" id="Volvo"> Volvo</button>
 				<div class="panel">
   					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation  					ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 			</div>
@@ -54,20 +60,20 @@
 var acc = document.getElementsByClassName("accordion");
 var i;
 
-for (i = 0; i < acc.length; i++) 
+for (i = 0; i < acc.length; i++)
 	{
-  	acc[i].onclick = function() 
+  	acc[i].onclick = function()
 		{
     		this.classList.toggle("active");
     		var panel = this.nextElementSibling;
     		if (panel.style.maxHeight)
 			{
       			panel.style.maxHeight = null;
-    		} 
-			else 
+    		}
+			else
 			{
       			panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
+    }
   }
 }
 </script>
