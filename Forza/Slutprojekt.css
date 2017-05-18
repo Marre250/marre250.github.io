@@ -100,17 +100,28 @@ div.panel {
 }
 
 #trailer{
-	width:60vw;
-	height:calc(60vw*(9/16));
+	width:50vw;
+	height:calc(50vw*(9/16));
 }
 
-#linje{
+.linje{
 	width:100%;
 	height:20px;
 	border-bottom:1px solid black;
 }
 
+iframe{
+	width:560px;
+	height:315px;
+	frameborder:0;
+	border:0;
+}
+
 h1{
+	text-align:center;
+}
+
+#center{
 	text-align:center;
 }
 
@@ -134,8 +145,24 @@ h1{
 	width:8%;
 }
 
+#Reliant_Car{
+	width:50%;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	margin:0 auto;
+}
+
 #Volvo{
 	width:5%;
+}
+
+#Volvo_Car{
+	width:100%;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	margin:0 auto;
 }
 
 #Blizzard_Map{
@@ -166,9 +193,11 @@ h1{
 @media screen and (max-width: 800px){ 
     #storbox {
 		background-image:url(Forza_Mobile.jpg);
-		background-size:auto 100%;
-	    	background-attachment:fixed;
-	    	background-size:100% 100%;
-		background-repeat:no-repeat;
+		background-size:100% auto;
+	}
+	
+	#trailer{
+		width:85vw;
+		height:calc(85vw*(9/16));
 	}
 }
