@@ -195,7 +195,7 @@ h1{
 		background-image:url(Forza_Mobile.jpg);
 		background-size:100% auto;
 	    	background-attachment:fixed;
-	    	position:absolute;
+	    	position:fixed;
 	}
 	
 	#trailer{
