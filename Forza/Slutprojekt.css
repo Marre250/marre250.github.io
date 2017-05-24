@@ -193,6 +193,7 @@ h1{
     #storbox {
 		background-image:url(Forza_Mobile.jpg);
 		background-size:cover;
+	    	background-repeat:no-repeat;
 	}
 	
 	#trailer{
