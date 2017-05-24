@@ -195,6 +195,7 @@ h1{
 		background-size:cover;
 	    	background-attachment:fixed;
 	    	position:fixed;
+	    	overflow-y: scroll;
 	}
 	
 	#trailer{
