@@ -1,0 +1,210 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	background-color:#FFF;
+	font-family:gadugi;
+	font-size:14px;
+	padding:0;
+	margin:0;
+}
+
+#storbox{
+	background-image:url(Forza_4K.jpg);
+	background-attachment:fixed;
+	background-size:100% 100%;
+	width:100%;
+	min-height:100%;
+	position:absolute;
+}
+header{
+	float:left;
+	width:70%;
+ 	height:54px;
+	margin-bottom:3%;
+	margin-top:3%;
+	margin-left:25%;
+}
+
+#meny{
+	background-color:rgba(141,173,190,0.6);
+	width:100%;
+	height:100%;
+}
+
+article{
+	clear:both;
+	background-color:rgba(255,255,255,0.65);
+	width:55%;
+	min-height:60%;
+	margin-left:40%;
+	overflow:auto;
+	padding:10px;
+}
+section{
+	background-color:#03F;
+	width:50%;
+	height:60%;
+}
+
+ul.menu {
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow:visible;
+    background-color: #333333;
+}
+
+ul.menu li {
+	float:left;
+}
+
+ul.menu li a {
+    display: block;
+	color:rgba(236,41,130,1);
+	font-weight:600;
+    text-align: center;
+	font-size:18px;
+    padding: 13px 30px;
+    text-decoration: none;
+	overflow:hidden;
+}
+
+ul.menu li a:hover:not(.active) {
+	background-color:#09F;
+}
+
+button.accordion {
+    background-color:rgba(141,173,190,0.6);
+    color:#000;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 20px;
+    transition: 0.4s;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color:#DDD;
+}
+
+div.panel {
+    padding: 0 18px;
+    background-color:rgba(255,255,255,0.2);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+#trailer{
+	width:50vw;
+	height:calc(50vw*(9/16));
+}
+
+.linje{
+	width:100%;
+	height:20px;
+	border-bottom:1px solid black;
+}
+
+iframe{
+	width:560px;
+	height:315px;
+	frameborder:0;
+	border:0;
+}
+
+h1{
+	text-align:center;
+}
+
+#center{
+	text-align:center;
+}
+
+#Audi{
+	width:7%;
+	}
+
+#Chevrolet{
+	width:7%;
+	}
+
+#BMW{
+	width:4%;
+	}
+
+#Porsche{
+	width:4%;
+	}
+
+#Reliant{
+	width:8%;
+}
+
+#Reliant_Car{
+	width:50%;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	margin:0 auto;
+}
+
+#Volvo{
+	width:5%;
+}
+
+#Volvo_Car{
+	width:100%;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	margin:0 auto;
+}
+
+#Blizzard_Map{
+	width:100%;
+}
+
+#Hot_Wheels{
+	width:100%;
+}
+
+
+@media screen and (max-width: 800px){ 
+    ul.menu li {
+		float: none;
+	}
+}
+@media screen and (max-width: 800px){  
+    header {
+		margin:2%;
+		float:none;
+		width:95%;
+		height:212px;
+	}
+}
+@media screen and (max-width: 800px){ 
+    article {
+		margin:2%;
+		float:none;
+		width:95%;
+	}
+}
+@media screen and (max-width: 800px){ 
+    
+	#storbox {
+		background-image:url(Forza_Mobile.jpg);
+	    	background-repeat:no-repeat;
+	    	
+	    	background-size:100% 100%;
+	    
+	}
+	
+	#trailer{
+		width:85vw;
+		height:calc(85vw*(9/16));
+	}
+}

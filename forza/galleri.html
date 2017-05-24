@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+    <meta charset="utf-8">
+    <link href="Slutprojekt.css" rel="stylesheet" type="text/css">
+    <title>Startsida</title>
+</head>
+
+<body>
+	<div id="storbox">
+    	<header>
+            	<ul class="menu" id="meny">
+  					<li><a href="index.html">STARTSIDA</a></li>
+  					<li><a href="om.html">OM</a></li>
+  					<li><a href="bilmärken.html">BILMÄRKEN</a></li>
+                	<li><a href="galleri.html">GALLERI</a></li>
+				</ul>
+        </header>
+        <article>
+        	<h1>Forza Horizon 3 Galleri</h1>
+            <p id="center">Här är några bilder bilarna i spelet med den vackra mijön i bakgrunden</p>
+
+			<div class="w3-content w3-display-container">
+  				<img class="mySlides" src="Forza_Galleri/Forza1.jpg" alt="Forza_Screenshots" style="width:100%">
+  				<img class="mySlides" src="Forza_Galleri/Forza2.jpg" alt="Forza_Screenshots" style="width:100%">
+  				<img class="mySlides" src="Forza_Galleri/Forza3.jpg" alt="Forza_Screenshots" style="width:100%">
+                <img class="mySlides" src="Forza_Galleri/Forza4.jpg" alt="Forza_Screenshots" style="width:100%">
+                <img class="mySlides" src="Forza_Galleri/Forza5.jpg" alt="Forza_Screenshots" style="width:100%">
+                <img class="mySlides" src="Forza_Galleri/Forza6.png" alt="Forza_Screenshots" style="width:100%">
+                <img class="mySlides" src="Forza_Galleri/Forza7.jpg" alt="Forza_Screenshots" style="width:100%">
+                <img class="mySlides" src="Forza_Galleri/Forza8.jpg" alt="Forza_Screenshots" style="width:100%">
+                <img class="mySlides" src="Forza_Galleri/Forza9.jpg" alt="Forza_Screenshots" style="width:100%">
+
+  				<button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  				<button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+			</div>
+
+			<script>
+				var slideIndex = 1;
+				showDivs(slideIndex);
+
+				function plusDivs(n) 
+				{
+				  showDivs(slideIndex += n);
+				}
+
+				function showDivs(n)
+				{
+  				var i;
+  				var x = document.getElementsByClassName("mySlides");
+  				if (n > x.length) 
+					{slideIndex = 1}    
+  				if (n < 1) 
+					{slideIndex = x.length}
+  				for (i = 0; i < x.length; i++)
+				{
+  				   x[i].style.display = "none";  
+  				}
+  					x[slideIndex-1].style.display = "block";  
+				}
+			</script>
+        </article>
+    </div>
+</body>
+</html>
